@@ -4,7 +4,7 @@ class Menu extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('FirstPage'),
+        title: Text('メインメニュー'),
         centerTitle: true,
       ),
       body: Container(
@@ -14,7 +14,11 @@ class Menu extends StatelessWidget {
             children: <Widget>[
               RaisedButton(
                 onPressed: () => {},
-                child: Text('Nextページへ'),
+                child: Text('依頼者'),
+              ),
+              RaisedButton(
+                onPressed: () => {},
+                child: Text('情報提供者'),
               )
             ],
           ),

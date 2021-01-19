@@ -30,8 +30,16 @@ dependencies:
   cupertino_icons: ^1.0.1
 
 dev_dependencies:
+  flutter_native_splash: ^0.2.7
   flutter_test:
     sdk: flutter
+
+# splash option
+flutter_native_splash:
+  color: "#42a5f5"  # required parameter
+  image: assets/images/opeaning_icon.png  # optional parameter
+  color_dark: "#042a49"  # required if image_dark parameter is used
+  fill: true
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
