@@ -22,17 +22,31 @@ class Menu extends StatelessWidget {
                 style: GoogleFonts.getFont('GFS Didot'),
               ),
               SizedBox(height: 100),
-              RaisedButton(
-                onPressed: () => {},
-                child: Text('依頼者'),
-              ),
-              RaisedButton(
-                child: const Text('情報提供者'),
-                color: Colors.blue,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10),
+              SizedBox(
+                width: double.infinity, // match_parent
+                child: RaisedButton.icon(
+                  textColor: Colors.white,
+                  color: Colors.black,
+                  icon: Icon(Icons.accessibility),
+                  label: Text(
+                    "Requester",
+                    style: GoogleFonts.getFont('GFS Didot'),
+                  ),
+                  onPressed: () {},
                 ),
-                onPressed: () {},
+              ),
+              SizedBox(
+                width: double.infinity, // match_parent
+                child: RaisedButton.icon(
+                  textColor: Colors.white,
+                  color: Colors.black,
+                  icon: Icon(Icons.announcement),
+                  label: Text(
+                    "Information Provider",
+                    style: GoogleFonts.getFont('GFS Didot'),
+                  ),
+                  onPressed: () {},
+                ),
               ),
             ],
           ),
