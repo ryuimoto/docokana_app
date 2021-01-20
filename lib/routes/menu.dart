@@ -1,3 +1,4 @@
+import 'package:docokana_app/routes/information_provider/auth/login.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -32,7 +33,7 @@ class Menu extends StatelessWidget {
                     "Requester",
                     style: GoogleFonts.getFont('GFS Didot'),
                   ),
-                  onPressed: () {},
+                  onPressed: (Login()) {},
                 ),
               ),
               SizedBox(
