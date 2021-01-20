@@ -19,9 +19,9 @@ class Menu extends StatelessWidget {
             children: <Widget>[
               Text(
                 'Who are you?',
-                style: GoogleFonts.getFont('GFS Didot'),
+                style: GoogleFonts.getFont('GFS Didot', fontSize: 20),
               ),
-              SizedBox(height: 100),
+              SizedBox(height: 80),
               SizedBox(
                 width: double.infinity, // match_parent
                 child: RaisedButton.icon(
