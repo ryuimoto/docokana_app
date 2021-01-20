@@ -33,7 +33,13 @@ class Menu extends StatelessWidget {
                     "Requester",
                     style: GoogleFonts.getFont('GFS Didot'),
                   ),
-                  onPressed: (Login()) {},
+                  onPressed: () => {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Login(),
+                        ))
+                  },
                 ),
               ),
               SizedBox(

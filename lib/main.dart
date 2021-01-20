@@ -1,3 +1,4 @@
+import 'package:docokana_app/routes/information_provider/auth/login.dart';
 import 'package:docokana_app/routes/menu.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +17,8 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       debugShowCheckedModeBanner: false,
-      home: Menu(),
+      // home: Menu(), //test change method
+      home: Login(),
     );
   }
 }

@@ -1,1 +1,51 @@
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
+class Login extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Login'),
+        centerTitle: true,
+        backgroundColor: Colors.lightGreen,
+      ),
+      body: Container(
+        padding: EdgeInsets.all(32.0),
+        child: Center(
+          child: Column(
+            children: <Widget>[
+              TextFormField(
+                enabled: true,
+                maxLength: 20,
+                maxLengthEnforced: false,
+                obscureText: false,
+                decoration: const InputDecoration(hintText: 'Email'),
+              ),
+              TextFormField(
+                enabled: true,
+                maxLength: 20,
+                maxLengthEnforced: false,
+                obscureText: false,
+                decoration: const InputDecoration(hintText: 'Password'),
+              ),
+              SizedBox(
+                width: double.infinity, // match_parent
+                child: RaisedButton(
+                  textColor: Colors.white,
+                  color: Colors.black,
+                  // label: Text(
+                  //   "Information Provider",
+                  //   style: GoogleFonts.getFont('GFS Didot'),
+                  // ),
+
+                  onPressed: () {},
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
