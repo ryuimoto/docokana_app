@@ -1,6 +1,6 @@
 import 'package:docokana_app/routes/information_provider/auth/login.dart';
 import 'package:docokana_app/routes/information_provider/auth/register.dart';
-import 'package:docokana_app/routes/menu.dart';
+import 'package:docokana_app/routes/information_provider/request_list.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,8 +18,8 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       debugShowCheckedModeBanner: false,
-      // home: Menu(), //test change method
-      home: Register(),
+      home: Login(), //test change method
+      // home: RequestList(),
     );
   }
 }
