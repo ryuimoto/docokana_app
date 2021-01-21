@@ -31,14 +31,14 @@ class Login extends StatelessWidget {
               ),
               SizedBox(
                 width: double.infinity, // match_parent
-                child: RaisedButton(
+                child: RaisedButton.icon(
                   textColor: Colors.white,
                   color: Colors.black,
-                  // label: Text(
-                  //   "Information Provider",
-                  //   style: GoogleFonts.getFont('GFS Didot'),
-                  // ),
-
+                  icon: Icon(Icons.beenhere),
+                  label: Text(
+                    "Login",
+                    style: GoogleFonts.getFont('GFS Didot'),
+                  ),
                   onPressed: () {},
                 ),
               ),
