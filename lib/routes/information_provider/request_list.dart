@@ -1,65 +1,64 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:flutter_slidable/flutter_slidable.dart';
 
 class RequestList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Register'),
-        centerTitle: true,
-        backgroundColor: Colors.lightGreen,
-      ),
-      body: Container(
-        padding: EdgeInsets.all(32.0),
-        child: Center(
-          child: Column(
-            children: <Widget>[
-              TextFormField(
-                enabled: true,
-                maxLength: 20,
-                maxLengthEnforced: false,
-                obscureText: false,
-                decoration: const InputDecoration(hintText: 'First Name'),
+    var list = [
+      "メッセージ",
+      "メッセージ",
+      "メッセージ",
+      "メッセージ",
+      "メッセージ",
+    ];
+
+    return MaterialApp(
+        home: Scaffold(
+            appBar: AppBar(
+              title: Text(
+                'ListView',
+                style: GoogleFonts.getFont('GFS Didot'),
               ),
-              TextFormField(
-                enabled: true,
-                maxLength: 20,
-                maxLengthEnforced: false,
-                obscureText: false,
-                decoration: const InputDecoration(hintText: 'Last Name'),
-              ),
-              TextFormField(
-                enabled: true,
-                maxLength: 20,
-                maxLengthEnforced: false,
-                obscureText: false,
-                decoration: const InputDecoration(hintText: 'Email'),
-              ),
-              TextFormField(
-                enabled: true,
-                maxLength: 20,
-                maxLengthEnforced: false,
-                obscureText: false,
-                decoration: const InputDecoration(hintText: 'Password'),
-              ),
-              SizedBox(
-                width: double.infinity, // match_parent
-                child: RaisedButton.icon(
-                  textColor: Colors.white,
-                  color: Colors.black,
-                  icon: Icon(Icons.add_sharp),
-                  label: Text(
-                    "Register",
-                    style: GoogleFonts.getFont('GFS Didot'),
-                  ),
+              backgroundColor: Colors.lightGreen,
+              actions: <Widget>[
+                IconButton(
+                  icon: const Icon(Icons.add_outlined),
+                  tooltip: 'Show Snackbar',
                   onPressed: () {},
                 ),
-              ),
-            ],
-          ),
+              ],
+            ),
+            body: ListView.builder(
+              itemBuilder: (BuildContext context, int index) {
+                if (index >= list.length) {
+                  list.addAll([
+                    "message",
+                    "message",
+                    "message",
+                    "message",
+                  ]);
+                }
+                return _messageItem(list[index]);
+              },
+            )));
+  }
+
+  Widget _messageItem(String title) {
+    return Container(
+      decoration: new BoxDecoration(
+          border:
+              new Border(bottom: BorderSide(width: 1.0, color: Colors.grey))),
+      child: ListTile(
+        title: Text(
+          title,
+          style: TextStyle(color: Colors.black, fontSize: 18.0),
         ),
+        onTap: () {
+          print("onTap called.");
+        }, // タップ
+        onLongPress: () {
+          print("onLongTap called.");
+        }, // 長押し
       ),
     );
   }

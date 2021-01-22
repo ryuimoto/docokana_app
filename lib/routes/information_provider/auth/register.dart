@@ -6,7 +6,10 @@ class Register extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Register'),
+        title: Text(
+          'Register',
+          style: GoogleFonts.getFont('GFS Didot'),
+        ),
         centerTitle: true,
         backgroundColor: Colors.lightGreen,
       ),

@@ -6,7 +6,10 @@ class Login extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Login'),
+        title: Text(
+          'Login',
+          style: GoogleFonts.getFont('GFS Didot'),
+        ),
         centerTitle: true,
         backgroundColor: Colors.lightGreen,
       ),
