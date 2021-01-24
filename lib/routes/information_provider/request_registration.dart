@@ -8,7 +8,11 @@ class RequestRegistration extends StatelessWidget {
       title: 'Form',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Form'),
+          title: Text(
+            'Form',
+            style: GoogleFonts.getFont('GFS Didot'),
+          ),
+          backgroundColor: Colors.lightGreen,
         ),
         body: Center(
           child: ChangeForm(),

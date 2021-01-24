@@ -1,4 +1,5 @@
-import 'package:docokana_app/routes/information_provider/request_registration.dart';
+import 'package:docokana_app/routes/information_provider/request_list.dart';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,8 +16,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: RequestRegistration(), //test change method
-      // home: RequestList(),
+      // home: RequestRegistration(), //test change method
+      home: RequestList(),
     );
   }
 }
