@@ -1,5 +1,4 @@
-import 'package:docokana_app/routes/information_provider/request_list.dart';
-
+import 'package:docokana_app/template_routes/information_provider/request_list.dart';
 import 'package:flutter/material.dart';
 
 void main() {
