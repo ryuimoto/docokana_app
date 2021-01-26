@@ -1,3 +1,4 @@
+import 'package:docokana_app/fitness_app/fintness_app_theme.dart';
 import 'package:docokana_app/template_routes/information_provider/request_list.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       // home: RequestRegistration(), //test change method
-      home: RequestList(),
+      // home: f(),
     );
   }
 }
